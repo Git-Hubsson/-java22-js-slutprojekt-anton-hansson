@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <form>
+            <input type="text" id="textField" placeholder="Photos, people, or groups" value="" autocomplete="off">
+            <button id="searchButton">Search</button>
+        </form>
+        <h3 id="filters">Filters</h3>
+    </nav>
+        <aside id="sidebar" class="hidden">
+            <form id="sidebarForm">
+                <p>Sort by..</p>
+                <select>
+                    <option value="date-posted-desc">Sort by..</option>
+                    <option value="date-posted-desc">Date posted - Descending</option>
+                    <option value="date-posted-asc">Date posted - Ascending</option>
+                    <option value="relevance">Relevance</option>
+                    <option value="interestingness-desc">Interestingness</option>
+                </select>
+                <p>Select size..</p>
+                <select>
+                    <option value="w">Select size..</option>
+                    <option value="t">Small</option>
+                    <option value="w">Medium</option>
+                    <option value="z">Large</option>
+                </select>
+                <p>Amount of pictures..</p>
+                <input type="number" min="1" max="500" value="1">
+                <button id="saveFilterOptions">Save filters</button>
+            </form>
+        </aside>
+    <div id="imageContainer">
+    </div>
+</body>
+</html>

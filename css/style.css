@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color: #ea1111;
+    height: 4rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+}
+
+input, select{
+    height: 2rem;
+}
+
+#textField{
+    width: 15rem;
+}
+
+#imageContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    transition: 0.4s;
+}
+
+img{
+    cursor: pointer;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+    box-shadow: 5px  5px 5px 3px #444;
+}
+
+img:hover{
+    transform:scale(1.07);
+}
+
+.errorMessage{
+    border-bottom: red solid;
+    border-top: red solid;
+    padding: 5px;
+    margin-top: 3rem;
+}
+
+#sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #ea1111;
+    right: -200px;
+    transition: right 0.4s ease-out;
+}
+
+#sidebarForm {
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filters{
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    color: white;
+    cursor: pointer;
+    text-decoration-line: underline;
+    z-index: 999;
+}
